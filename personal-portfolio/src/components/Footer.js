@@ -19,9 +19,9 @@ export const Footer = () => {
               <a href="https://www.linkedin.com/in/sadqua-parween/">
                 <img src={navIcon1} alt="Icon" />
               </a>
-              <a href="https://github.com/aayat2002">
+              {/* <a href="https://github.com/aayat2002">
                 <img src={navIcon2} alt="Icon" />
-              </a>
+              </a> */}
               {/* <a href="https://vercel.com/aayat2002s-projects">
                 <img src={navIcon3} alt="Icon" />
               </a> */}
