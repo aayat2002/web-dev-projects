@@ -95,97 +95,97 @@
 // }
 
 // src/components/Contact.js
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+// import React, { useState } from "react";
+// import { motion } from "framer-motion";
 
-const Contact = () => {
-  // State to handle form data
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+// const Contact = () => {
+//   // State to handle form data
+//   const [formData, setFormData] = useState({
+//     name: "",
+//     email: "",
+//     message: "",
+//   });
 
-  // State to handle form submission status
-  const [submitted, setSubmitted] = useState(false);
+//   // State to handle form submission status
+//   const [submitted, setSubmitted] = useState(false);
 
-  // Function to handle form input changes
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
+//   // Function to handle form input changes
+//   const handleChange = (e) => {
+//     const { name, value } = e.target;
+//     setFormData({
+//       ...formData,
+//       [name]: value,
+//     });
+//   };
 
-  // Function to handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Simulate form submission logic
-    console.log("Form submitted:", formData);
+//   // Function to handle form submission
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     // Simulate form submission logic
+//     console.log("Form submitted:", formData);
 
-    // After submission, reset the form and show submission status
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
-    setSubmitted(true);
-  };
+//     // After submission, reset the form and show submission status
+//     setFormData({
+//       name: "",
+//       email: "",
+//       message: "",
+//     });
+//     setSubmitted(true);
+//   };
 
-  return (
-    <motion.section
-      id="contact"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-    >
-      <h2>Contact Me</h2>
+//   return (
+//     <motion.section
+//       id="contact"
+//       initial={{ opacity: 0 }}
+//       animate={{ opacity: 1 }}
+//       transition={{ duration: 1 }}
+//     >
+//       <h2>Contact Me</h2>
 
-      {submitted ? (
-        <p>Thank you for reaching out! I'll get back to you soon.</p>
-      ) : (
-        <form onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-          </div>
+//       {submitted ? (
+//         <p>Thank you for reaching out! I'll get back to you soon.</p>
+//       ) : (
+//         <form onSubmit={handleSubmit}>
+//           <div>
+//             <label htmlFor="name">Name:</label>
+//             <input
+//               type="text"
+//               id="name"
+//               name="name"
+//               value={formData.name}
+//               onChange={handleChange}
+//               required
+//             />
+//           </div>
 
-          <div>
-            <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
+//           <div>
+//             <label htmlFor="email">Email:</label>
+//             <input
+//               type="email"
+//               id="email"
+//               name="email"
+//               value={formData.email}
+//               onChange={handleChange}
+//               required
+//             />
+//           </div>
 
-          <div>
-            <label htmlFor="message">Message:</label>
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-            ></textarea>
-          </div>
+//           <div>
+//             <label htmlFor="message">Message:</label>
+//             <textarea
+//               id="message"
+//               name="message"
+//               value={formData.message}
+//               onChange={handleChange}
+//               required
+//             ></textarea>
+//           </div>
 
-          <button type="submit">Send Message</button>
-        </form>
-      )}
-    </motion.section>
-  );
-};
+//           <button type="submit">Send Message</button>
+//         </form>
+//       )}
+//     </motion.section>
+//   );
+// };
 
-export default Contact;
+// export default Contact;
